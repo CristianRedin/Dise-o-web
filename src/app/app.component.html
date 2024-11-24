@@ -1,0 +1,352 @@
+<style>
+  .grid {
+  gap: 10px; /* Espaciado entre las columnas */
+}
+
+.col {
+  flex: 1; /* Asegura que todas las columnas tengan el mismo ancho */
+}
+
+.box {
+  height: 100px; /* Altura fija de las cajas */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  font-size: 18px; /* Tamaño del texto */
+  font-weight: bold; /* Texto en negrita */
+  border: 3px solid #ffffff; /* Color del borde */
+  background-color: #007bff; /* Fondo azul */
+  color: #ffffff; /* Color del texto */
+  border-radius: 10px; /* Bordes redondeados */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra */
+  background-color: #0056b3; /* Cambio de color de fondo al hacer hover */
+  border-color: #ffcc00; /* Cambio de color del borde al hacer hover */
+}
+
+/* Diferentes colores para cada caja */
+.col:nth-child(1) .box {
+  background-color: #ff6b6b; /* Fondo rojo */
+  border-color: #ff4e4e; /* Borde rojo más oscuro */
+}
+
+.col:nth-child(2) .box {
+  background-color: #51cf66; /* Fondo verde */
+  border-color: #3dbd55; /* Borde verde más oscuro */
+}
+
+.col:nth-child(3) .box {
+  background-color: #339af0; /* Fondo azul */
+  border-color: #1c7ed6; /* Borde azul más oscuro */
+}
+</style>
+<h1>Matriz 3x3</h1>
+
+<div class="grid">
+  <div class="col">
+    <div class="box">1</div>
+  </div>
+  <div class="col">
+    <div class="box">2</div>
+  </div>
+  <div class="col">
+    <div class="box">3</div>
+  </div>
+</div>
+<div class="grid">
+  <div class="col">
+    <div class="box">1</div>
+  </div>
+  <div class="col">
+    <div class="box">2</div>
+  </div>
+  <div class="col">
+    <div class="box">3</div>
+  </div>
+</div>
+<div class="grid">
+  <div class="col">
+    <div class="box">1</div>
+  </div>
+  <div class="col">
+    <div class="box">2</div>
+  </div>
+  <div class="col">
+    <div class="box">3</div>
+  </div>
+</div>
+
+<h1>Matriz 4x4</h1>
+
+<div class="grid">
+  <div class="col">
+    <div class="box" style="background-color: #021c74; border-color: #0cd18f;">1</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #280dc2; border-color: #a51b3d;">2</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #c20a14; border-color: #04a542;">3</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #10c054; border-color: #c300ff;">4</div>
+  </div>
+</div>
+<div class="grid">
+  <div class="col">
+    <div class="box" style="background-color: #3e3cb3; border-color: #3700ff;">1</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #40b810; border-color: #ff9800;">2</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #080114; border-color: #ff0040;">3</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #09bb09; border-color: #3d0b99;">4</div>
+  </div>
+</div>
+<div class="grid">
+  <div class="col">
+    <div class="box" style="background-color: #1a25c4; border-color: #ff9800;">1</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #109e46; border-color: #ff9800;">2</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #1ac20b; border-color: #ff9800;">3</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #2c1acf; border-color: #ff9800;">4</div>
+  </div>
+</div>
+<div class="grid">            
+  <div class="col">
+    <div class="box" style="background-color: #16c03a; border-color: #ff9800;">1</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #c41e08; border-color: #ff9800;">2</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #3f22e6; border-color: #ff9800;">3</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #ff0707; border-color: #ff9800;">4</div>
+  </div>
+</div>
+<h1>Matriz de 5X5</h1>
+
+<div class="grid">
+  <div class="col">
+    <div class="box" style="background-color: #e6520e; border-color: #ff9800;">1</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #17ad2b; border-color: #ff9800;">2</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #7f17d4; border-color: #ff9800;">3</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #1b974f; border-color: #ff9800;">4</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #941616; border-color: #ff9800;">5</div>
+  </div>
+  
+</div>
+<div class="grid">
+  <div class="col">
+    <div class="box" style="background-color: #070500; border-color: #ff9800;">1</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #ffc107; border-color: #35a3e2;">2</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #f02d2d; border-color: #0283b6;">3</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #13c92c; border-color: #14ca8d;">4</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #2f27a7; border-color: #f11919;">5</div>
+  </div>
+</div>
+<div class="grid">
+  <div class="col">
+    <div class="box" style="background-color: #ffc107; border-color: #ff9800;">1</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #13ec13; border-color: #ec5d09;">2</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #ffc107; border-color: #ff9800;">3</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #2be007; border-color: #193bd1;">4</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #3c13f0; border-color: #ee0f21;">5</div>
+  </div>
+</div>
+<div class="grid">    
+  <div class="col">
+    <div class="box" style="background-color: #ff6a07; border-color: #4ad314;">1</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #ff4107; border-color: hsl(36, 100%, 50%);">2</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #41b909; border-color: #da4906;">3</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #0b49cf; border-color: #0fbe3b;">4</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #070706; border-color: #100699;">5</div>
+  </div>
+</div>
+<div class="grid">
+  <div class="col">
+    <div class="box" style="background-color: #d3111b; border-color: #ff9800;">1</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #db480e; border-color: #ff9800;">2</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #19cf28; border-color: #ff9800;">3</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #8d202f; border-color: #ff9800;">4</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #3a14e7; border-color: #ff9800;">5</div>
+  </div>
+  </div>
+<h1>Matriz de 6x6</h1>
+
+<div class="grid">
+  <div class="col">
+    <div class="box" style="background-color: #0741ff; border-color: #ff9800;">1</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #4907ff; border-color: #ff9800;">2</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #13b31b; border-color: #ff9800;">3</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #c41212; border-color: #ff9800;">4</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #36be73; border-color: #ff9800;">5</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #761dca; border-color: #ff9800;">6</div>
+  </div>
+  
+</div>
+<div class="grid">
+  <div class="col">
+    <div class="box" style="background-color: #0be04b; border-color: #ff9800;">1</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #ce1f2e; border-color: #ff9800;">2</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #e21923; border-color: #ff9800;">3</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #0e1eff; border-color: #ff9800;">4</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #5d0e8b; border-color: #ff9800;">5</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #9033fa; border-color: #ff9800;">6</div>
+  </div>
+</div>
+<div class="grid">
+  <div class="col">
+    <div class="box" style="background-color: #0bda15; border-color: #ff9800;">1</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #390cdb; border-color: #ff9800;">2</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #f81d28; border-color: #ff9800;">3</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #1d2dbe; border-color: #ff9800;">4</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #08b625; border-color: #ff9800;">5</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #07ff07; border-color: #ff9800;">6</div>
+  </div>
+</div> 
+<div class="grid">
+  <div class="col">
+    <div class="box" style="background-color: #4b2ef0; border-color: #ff9800;">1</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #4bf019; border-color: #5d17df;">2</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #f71919; border-color: #2d62d4;">3</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #d10e28; border-color: #45d340;">4</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #0f249b; border-color: #eb7323;">5</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #0a0800; border-color: #d11827;">6</div>
+  </div>
+</div>
+<div class="grid">  
+  <div class="col">
+    <div class="box" style="background-color: #8e15f1; border-color: #f77b07;">1</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #ffc107; border-color: #ff9800;">2</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #cc0d0d; border-color: #08b925;">3</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #ffc107; border-color: #ff9800;">4</div>
+  </div>
+  <div class="col">
+    <div class="box" style="background-color: #ffc107; border-color: #ff9800;">5</div>
+      </div>
+    <div class="col">
+      <div class="box" style="background-color: #ffc107; border-color: #ff9800;">6</div>
+    </div>
+    </div>
+    <div class="grid">
+      <div class="col">
+        <div class="box" style="background-color: #e7782e; border-color: #ff9800;">1</div>
+      </div>
+      <div class="col">
+        <div class="box" style="background-color: #23910da9; border-color: #26cf50;">2</div>
+      </div>
+      <div class="col">
+        <div class="box" style="background-color: #3ee754; border-color: #b68336;">3</div>
+      </div>
+      <div class="col">
+        <div class="box" style="background-color: #4e2eda; border-color: #27b372;">4</div>
+      </div>
+      <div class="col">
+        <div class="box" style="background-color: #0b18d6; border-color: #1fdb4e;">5</div>
+          </div>
+        <div class="col">
+          <div class="box" style="background-color: #13e66a; border-color: #ec0c3d;">6</div>
+        </div>
+
