@@ -1,0 +1,37 @@
+<p>formulario works!</p>
+<h1>hola</h1>
+
+<div class="p-fluid p-formgrid p-grid">
+    <h2>Formulario de Contacto</h2>
+    
+    <form (ngSubmit)="onSubmit()" #form="ngForm">
+      
+      <!-- Campo de Nombre -->
+      <div class="p-field p-col-12 p-md-6">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" pInputText [(ngModel)]="nombre" name="nombre" required />
+        <p-message *ngIf="submitted && !nombre" severity="error" text="El nombre es requerido"></p-message>
+      </div>
+      
+      <!-- Campo de Correo -->
+      <div class="p-field p-col-12 p-md-6">
+        <label for="correo">Correo</label>
+        <input id="correo" type="email" pInputText [(ngModel)]="correo" name="correo" required />
+        <p-message *ngIf="submitted && !correo" severity="error" text="El correo es requerido"></p-message>
+      </div>
+  
+      <!-- Campo de Mensaje -->
+      <div class="p-field p-col-12">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" pInputText [(ngModel)]="mensaje" name="mensaje"></textarea>
+      </div>
+  
+      <!-- Botón de Enviar -->
+      <div class="p-col-12">
+        <button pButton type="submit" label="Enviar" icon="pi pi-send"></button>
+      </div>
+    </form>
+  
+   
+  </div>
+  

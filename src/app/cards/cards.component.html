@@ -1,252 +1,208 @@
-<p>cards works!</p>
+<h1 class="text-center text-3xl font-bold mb-4">Dota 2</h1>
 
-<h1>Dota 2</h1>
-<div class="flex flex-wrap md:justify-content-between justify-content-center">
-    <div class="text-orange-500 hover:text-orange-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center">hover:text-orange-700</div>
-</div>
-<p-card header="Dota 2" subheader="" [style]="{ width: '360px' }">
-    <ng-template pTemplate="header">
-        <img alt="Card" src="https://pbs.twimg.com/profile_images/1766224005181456384/gtmVrYa__400x400.jpg" />
-    </ng-template>
-    <p>
-        Dota 2 es un juego MOBA desarrollado por Valve, lanzado en 2013 para PC. Dos equipos de cinco jugadores luchan por destruir la base enemiga, eligiendo entre más de 120 héroes únicos. Es conocido por su jugabilidad estratégica y torneos como The International.
-    </p>
-    <ng-template pTemplate="footer">
-        <div class="flex gap-3 mt-1">
-            <p-button label="Cancel" severity="secondary" class="w-full" styleClass="w-full" />
-            <p-button label="Save" class="w-full" styleClass="w-full" />
-        </div>
-    </ng-template>
-</p-card>
+<div class="flex flex-wrap justify-center gap-4">
+    <!-- Primera Card -->
+    <p-card header="Dota 2" subheader="" [style]="{ width: '360px' }" class="w-1/2 md:w-1/4">
+        <ng-template pTemplate="header">
+            <img alt="Card" class="w-full h-48 object-cover" src="https://pbs.twimg.com/profile_images/1766224005181456384/gtmVrYa__400x400.jpg" />
+        </ng-template>
+        <p>
+            Dota 2 es un juego MOBA desarrollado por Valve, lanzado en 2013 para PC. Dos equipos de cinco jugadores luchan por destruir la base enemiga, eligiendo entre más de 120 héroes únicos. Es conocido por su jugabilidad estratégica y torneos como The International.
+        </p>
+        <ng-template pTemplate="footer">
+            <div class="flex gap-3 mt-1">
+                <p-button label="Cancel" severity="secondary" class="w-full" />
+                <p-button label="Save" class="w-full" />
+            </div>
+        </ng-template>
+    </p-card>
 
-<div class="flex flex-wrap md:justify-content-between justify-content-center">
-    <div class="text-orange-500 hover:text-orange-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center">hover:text-orange-700</div>
-</div>
+    <!-- Segunda Card -->
+    <p-card header="Windranger" subheader="" [style]="{ width: '360px' }" class="w-1/2 md:w-1/4">
+        <ng-template pTemplate="header">
+            <img alt="Card" class="w-full h-48 object-cover" src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/08/dota-2-windranger-hero.jpg" />
+        </ng-template>
+        <p>
+            Lyralei, conocida como Windranger, fue adoptada tras un ataque que destruyó su aldea. Creció en la naturaleza, desarrollando una conexión única con los vientos. Su habilidad para manipularlos le permitió convertirse en una cazadora letal, precisa y rápida.
+        </p>
+        <ng-template pTemplate="footer">
+            <div class="flex gap-3 mt-1">
+                <p-button label="Cancel" severity="secondary" class="w-full" />
+                <p-button label="Save" class="w-full" />
+            </div>
+        </ng-template>
+    </p-card>
 
-
-<p-card header="Windranger" subheader="" [style]="{ width: '360px' }">
-    <ng-template pTemplate="header">
-        <img alt="Card" src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/08/dota-2-windranger-hero.jpg" />
-    </ng-template>
-    <p>
-        Historia de Windranger (Lyralei)
-
-        Lyralei, conocida como Windranger, fue adoptada tras un ataque que destruyó su aldea. Creció en la naturaleza, desarrollando una conexión única con los vientos. Su habilidad para manipularlos le permitió convertirse en una cazadora letal, precisa y rápida. Ahora, como Windranger, utiliza sus dones para proteger a los inocentes y castigar a quienes traen destrucción, guiada siempre por el susurro del viento.
-    </p>
-    <ng-template pTemplate="footer">
-        <div class="flex gap-3 mt-1">
-            <p-button label="Cancel" severity="secondary" class="w-full" styleClass="w-full" />
-            <p-button label="Save" class="w-full" styleClass="w-full" />
-        </div>
-    </ng-template>
-</p-card>
-
-<div class="flex flex-wrap md:justify-content-between justify-content-center">
-    <div class="text-orange-500 hover:text-orange-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center">hover:text-orange-700</div>
-</div>
-
-<p-card header="Ursa" subheader="" [style]="{ width: '360px' }">
-    <ng-template pTemplate="header">
-        <img alt="Card" src="https://preview.redd.it/xc0tms5rf1d51.jpg?auto=webp&s=d6044f46a01d64d9b9062b3377b395f78b030c00" />
-    </ng-template>
-    <p>
-        Historia de Ursa
-
-       Ursa, conocido como el Guerrero Salvaje, proviene de los Ursine, una raza feroz y protectora que habita los bosques fríos. Vive con un código de honor, defendiendo a su clan de cualquier amenaza. Cuando los humanos destruyeron su hogar en busca de recursos, Ursa juró venganza. Armado con sus garras afiladas y su fuerza descomunal, lucha para proteger a su tierra y vengar a su gente.
-    </p>
-    <ng-template pTemplate="footer">
-        <div class="flex gap-3 mt-1">
-            <p-button label="Cancel" severity="secondary" class="w-full" styleClass="w-full" />
-            <p-button label="Save" class="w-full" styleClass="w-full" />
-        </div>
-    </ng-template>
-</p-card>
-
-<div class="flex flex-wrap md:justify-content-between justify-content-center">
-    <div class="text-orange-500 hover:text-orange-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center">hover:text-orange-700</div>
+    <!-- Tercera Card -->
+    <p-card header="Ursa" subheader="" [style]="{ width: '360px' }" class="w-1/2 md:w-1/4">
+        <ng-template pTemplate="header">
+            <img alt="Card" class="w-full h-48 object-cover" src="https://preview.redd.it/xc0tms5rf1d51.jpg?auto=webp&s=d6044f46a01d64d9b9062b3377b395f78b030c00" />
+        </ng-template>
+        <p>
+            Ursa, conocido como el Guerrero Salvaje, proviene de los Ursine, una raza feroz y protectora que habita los bosques fríos. Armado con sus garras afiladas y su fuerza descomunal, lucha para proteger a su tierra y vengar a su gente.
+        </p>
+        <ng-template pTemplate="footer">
+            <div class="flex gap-3 mt-1">
+                <p-button label="Cancel" severity="secondary" class="w-full" />
+                <p-button label="Save" class="w-full" />
+            </div>
+        </ng-template>
+    </p-card>
 </div>
 
-<p-card header="BloodSeeker" subheader="" [style]="{ width: '360px' }">
-    <ng-template pTemplate="header">
-        <img alt="Card" src="https://wewatch.gg/blog/wp-content/uploads/2020/06/1024.jpg" />
-    </ng-template>
-    <p>
-        Historia de Bloodseeker
+<div class="flex flex-wrap justify-center gap-4">
+    <!-- Card 1: BloodSeeker -->
+    <p-card header="BloodSeeker" subheader="" [style]="{ width: '360px' }" class="w-1/2 md:w-1/4">
+        <ng-template pTemplate="header">
+            <img alt="Card" class="w-full h-48 object-cover" src="https://wewatch.gg/blog/wp-content/uploads/2020/06/1024.jpg" />
+        </ng-template>
+        <p>
+            Bloodseeker, un despiadado seguidor de los ritos sangrientos, es un guerrero consagrado al dios Flayed Twins. Recorre el campo de batalla en busca de víctimas, saciando su insaciable deseo de sangre mientras sirve a sus oscuros dioses.
+        </p>
+        <ng-template pTemplate="footer">
+            <div class="flex gap-3 mt-1">
+                <p-button label="Cancel" severity="secondary" class="w-full" />
+                <p-button label="Save" class="w-full" />
+            </div>
+        </ng-template>
+    </p-card>
 
-        Bloodseeker, un despiadado seguidor de los ritos sangrientos, es un guerrero consagrado al dios Flayed Twins. Proviene de las tierras desoladas de Xhacatocatl, donde su pueblo ofrecía sacrificios para obtener lluvia. Su sed de sangre lo llevó a convertirse en el campeón de estos rituales, obteniendo poderes sobrehumanos. Ahora, Bloodseeker recorre el campo de batalla en busca de víctimas, saciando su insaciable deseo de sangre mientras sirve a sus oscuros dioses. 
-    </p>
-    <ng-template pTemplate="footer">
-        <div class="flex gap-3 mt-1">
-            <p-button label="Cancel" severity="secondary" class="w-full" styleClass="w-full" />
-            <p-button label="Save" class="w-full" styleClass="w-full" />
-        </div>
-    </ng-template>
-</p-card>
+    <!-- Card 2: Wraith King -->
+    <p-card header="Wraith King" subheader="" [style]="{ width: '360px' }" class="w-1/2 md:w-1/4">
+        <ng-template pTemplate="header">
+            <img alt="Card" class="w-full h-48 object-cover" src="https://preview.redd.it/nufen3ully051.jpg?width=640&crop=smart&auto=webp&s=fb98131c23dc3545a752787557ffc5206db55f75" />
+        </ng-template>
+        <p>
+            Wraith King, antes conocido como Ostarion, fue un rey obsesionado con la inmortalidad. Ahora, como el Rey Espectral, comanda legiones de no-muertos, reclamando territorios para mantener su dominio eterno.
+        </p>
+        <ng-template pTemplate="footer">
+            <div class="flex gap-3 mt-1">
+                <p-button label="Cancel" severity="secondary" class="w-full" />
+                <p-button label="Save" class="w-full" />
+            </div>
+        </ng-template>
+    </p-card>
 
-<div class="flex flex-wrap md:justify-content-between justify-content-center">
-    <div class="text-orange-500 hover:text-orange-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center">hover:text-orange-700</div>
+    <!-- Card 3: Jakiro -->
+    <p-card header="Jakiro" subheader="" [style]="{ width: '360px' }" class="w-1/2 md:w-1/4">
+        <ng-template pTemplate="header">
+            <img alt="Card" class="w-full h-48 object-cover" src="https://miro.medium.com/v2/resize:fit:634/0*bvENqNn8i3xo9ROa." />
+        </ng-template>
+        <p>
+            Jakiro, conocido como el Dragón Bicefálico, combina el calor abrasador y el frío devastador. Es una fuerza imparable que deja un rastro de destrucción a su paso.
+        </p>
+        <ng-template pTemplate="footer">
+            <div class="flex gap-3 mt-1">
+                <p-button label="Cancel" severity="secondary" class="w-full" />
+                <p-button label="Save" class="w-full" />
+            </div>
+        </ng-template>
+    </p-card>
 </div>
 
-<p-card header="Wraith King" subheader="" [style]="{ width: '360px' }">
-    <ng-template pTemplate="header">
-        <img alt="Card" src="https://preview.redd.it/nufen3ully051.jpg?width=640&crop=smart&auto=webp&s=fb98131c23dc3545a752787557ffc5206db55f75" />
-    </ng-template>
-    <p>
-        Historia de Wraith King
+<div class="flex flex-wrap justify-center gap-4">
+    <!-- Card 1: Tiny -->
+    <p-card header="Tiny" subheader="" [style]="{ width: '360px' }" class="w-1/2 md:w-1/4">
+        <ng-template pTemplate="header">
+            <img alt="Card" class="w-full h-48 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyQ8hwWubcypvLGylVymR4B7IPmQ3_-I6I0Q&s" />
+        </ng-template>
+        <p>
+            Tiny, el Gólem de Piedra, busca comprender su origen y propósito mientras utiliza su fuerza descomunal para moldear su destino.
+        </p>
+        <ng-template pTemplate="footer">
+            <div class="flex gap-3 mt-1">
+                <p-button label="Cancel" severity="secondary" class="w-full" />
+                <p-button label="Save" class="w-full" />
+            </div>
+        </ng-template>
+    </p-card>
 
-Wraith King, antes conocido como Ostarion, fue un rey obsesionado con la inmortalidad. Al conquistar reinos y acumular riquezas, buscó extender su reinado más allá de la muerte. Mediante rituales oscuros, transformó su carne en energía espectral, convirtiéndose en un ser inmortal. Ahora, como el Rey Espectral, comanda legiones de no-muertos, reclamando territorios y subyugando a quienes se interponen en su camino, todo para mantener su dominio eterno.
-    </p>
-    <ng-template pTemplate="footer">
-        <div class="flex gap-3 mt-1">
-            <p-button label="Cancel" severity="secondary" class="w-full" styleClass="w-full" />
-            <p-button label="Save" class="w-full" styleClass="w-full" />
-        </div>
-    </ng-template>
-</p-card>
+    <!-- Card 2: Queen of Pain -->
+    <p-card header="Queen of Pain" subheader="" [style]="{ width: '360px' }" class="w-1/2 md:w-1/4">
+        <ng-template pTemplate="header">
+            <img alt="Card" class="w-full h-48 object-cover" src="https://cdn.akamai.steamstatic.com/apps/dota2/images/qoparcana/wallpaper1_large.png" />
+        </ng-template>
+        <p>
+            Historia de Queen of Pain
 
-<div class="flex flex-wrap md:justify-content-between justify-content-center">
-    <div class="text-orange-500 hover:text-orange-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center">hover:text-orange-700</div>
+            La Reina del Dolor, conocida como Akasha, fue una princesa mortal que, buscando poder, hizo un pacto con fuerzas oscuras. Transformada en una demoníaca entidad de sufrimiento eterno, su cuerpo ahora está envuelto en sombras y tormentos. Alimentada por el dolor y la desesperación, Akasha viaja por el mundo sembrando el sufrimiento, disfrutando de las emociones de aquellos que sufren. Con su poder, es capaz de desatar ondas de energía destructiva y causar dolor físico y psicológico a sus enemigos.
+        </p>
+        <ng-template pTemplate="footer">
+            <div class="flex gap-3 mt-1">
+                <p-button label="Cancel" severity="secondary" class="w-full" styleClass="w-full" />
+                <p-button label="Save" class="w-full" styleClass="w-full" />
+            </div>
+        </ng-template>
+    </p-card>
+
+    <!-- Card 3: Lina -->
+    <p-card header="Lina" subheader="" [style]="{ width: '360px' }" class="w-1/2 md:w-1/4">
+        <ng-template pTemplate="header">
+            <img alt="Card" class="w-full h-48 object-cover" src="https://cdn.sanity.io/images/6znhzi10/production/112ccc734eb9b4a80ee0a7f5e2b5845768124278-2560x1440.jpg?w=736&auto=format" />
+        </ng-template>
+        <p>
+            Historia de Lina
+
+            Lina, conocida como la Dama de Fuego, es una joven hechicera nacida con un poder ígneo inmenso. Desde pequeña, mostró una conexión única con las llamas, y su habilidad para controlar el fuego la llevó a convertirse en una de las hechiceras más poderosas de su tiempo. A pesar de su talento, Lina siempre luchó por el reconocimiento, buscando destacarse en un mundo donde las mujeres poderosas eran raras. Ahora, como la Dama de Fuego, usa su control sobre el fuego para luchar contra aquellos que amenazan la paz, dejando un rastro de destrucción a su paso.
+        </p>
+        <ng-template pTemplate="footer">
+            <div class="flex gap-3 mt-1">
+                <p-button label="Cancel" severity="secondary" class="w-full" styleClass="w-full" />
+                <p-button label="Save" class="w-full" styleClass="w-full" />
+            </div>
+        </ng-template>
+    </p-card>
 </div>
 
-<p-card header="Jakiro" subheader="" [style]="{ width: '360px' }">
-    <ng-template pTemplate="header">
-        <img alt="Card" src="https://miro.medium.com/v2/resize:fit:634/0*bvENqNn8i3xo9ROa." />
-    </ng-template>
-    <p>
-        Historia de Jakiro
+<div class="flex flex-wrap justify-content-center gap-3">
+    <p-card header="Crystal Maiden" subheader="" [style]="{ width: '360px' }">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="https://images.alphacoders.com/101/1019591.jpg" />
+        </ng-template>
+        <p>
+            Historia de Crystal Maiden
 
-Jakiro, conocido como el Dragón Bicefálico, es una criatura única nacida con dos cabezas, una que domina el fuego y otra el hielo. Rechazado incluso por los dragones, creció salvaje y poderoso en los límites del mundo. Su capacidad para combinar el calor abrasador y el frío devastador lo convierte en una fuerza imparable. Ahora vaga por los campos de batalla, desatando su furia elemental y dejando un rastro de destrucción a su paso.
-    </p>
-    <ng-template pTemplate="footer">
-        <div class="flex gap-3 mt-1">
-            <p-button label="Cancel" severity="secondary" class="w-full" styleClass="w-full" />
-            <p-button label="Save" class="w-full" styleClass="w-full" />
-        </div>
-    </ng-template>
-</p-card>
+            Rikiya, conocida como Crystal Maiden, es una hechicera del hielo proveniente de las tierras gélidas de los reinos del norte. Desde su juventud, estuvo marcada por una extraña conexión con el hielo, desarrollando poderes mágicos que le permiten manipular el frío y la nieve. Después de que su aldea fuera destruida por fuerzas oscuras, se unió a la lucha para proteger a los inocentes. Ahora, como Crystal Maiden, utiliza su magia para congelar a sus enemigos y ayudar a sus compañeros, siempre guiada por el deseo de venganza y justicia.
+        </p>
+        <ng-template pTemplate="footer">
+            <div class="flex gap-3 mt-1">
+                <p-button label="Cancel" severity="secondary" class="w-full" styleClass="w-full" />
+                <p-button label="Save" class="w-full" styleClass="w-full" />
+            </div>
+        </ng-template>
+    </p-card>
 
-<div class="flex flex-wrap md:justify-content-between justify-content-center">
-    <div class="text-orange-500 hover:text-orange-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center">hover:text-orange-700</div>
+    <p-card header="Juggernaut" subheader="" [style]="{ width: '360px' }">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPWajHCpKuYPlmVWbfhXFLlNmm_bzvc22BQg&s" />
+        </ng-template>
+        <p>
+            Historia de Juggernaut
+
+            Juggernaut, cuyo verdadero nombre es Yurnero, es un guerrero nativo de una remota isla. Criado en un monasterio, fue entrenado en las artes del combate y la disciplina. Su destino lo marcó una máscara mágica, que le otorgó habilidades sobrehumanas y lo convirtió en el héroe de la espada inmortal. Aunque su vida está dedicada a la lucha, Yurnero sigue buscando un propósito más grande, guiado por la creencia de que la verdadera sabiduría reside en la perfección del combate. Como Juggernaut, lucha incansablemente para proteger y servir, confiando en su espada y su disciplina.
+        </p>
+        <ng-template pTemplate="footer">
+            <div class="flex gap-3 mt-1">
+                <p-button label="Cancel" severity="secondary" class="w-full" styleClass="w-full" />
+                <p-button label="Save" class="w-full" styleClass="w-full" />
+            </div>
+        </ng-template>
+    </p-card>
+
+    <p-card header="Marci" subheader="" [style]="{ width: '360px' }">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="https://www.vpesports.com/wp-content/uploads/2023/12/Dota-2-found-a-critical-bug-with-Marci-she-does-a-ton-of-damage-and-is-almost-invulnerable.jpeg" />
+        </ng-template>
+        <p>
+            Historia de Marci
+
+            Marci, una guerrera de corazón firme, proviene de las tierras de Kros. Criada en un pueblo dedicado a la protección de su gente, Marci fue entrenada en combate cuerpo a cuerpo desde temprana edad. Siempre leal a su señora, la princesa, luchó valientemente en las batallas, demostrando su excepcional destreza. Tras una tragedia que separó a su gente, Marci juró proteger a aquellos que lo necesitan, utilizando su fuerza y agilidad para ayudar a sus compañeros y derrotar a los enemigos en el campo de batalla.
+        </p>
+        <ng-template pTemplate="footer">
+            <div class="flex gap-3 mt-1">
+                <p-button label="Cancel" severity="secondary" class="w-full" styleClass="w-full" />
+                <p-button label="Save" class="w-full" styleClass="w-full" />
+            </div>
+        </ng-template>
+    </p-card>
 </div>
-
-<p-card header="Tiny" subheader="Card Subheader" [style]="{ width: '360px' }">
-    <ng-template pTemplate="header">
-        <img alt="Card" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyQ8hwWubcypvLGylVymR4B7IPmQ3_-I6I0Q&s" />
-    </ng-template>
-    <p>
-        Historia de Tiny
-
-      Tiny, el Gólem de Piedra, nació como un fragmento perdido de roca viviente que cobró conciencia. A medida que vagaba por el mundo, su cuerpo creció, acumulando más piedra y aumentando su tamaño y fuerza. Aunque de aspecto duro y colosal, Tiny es curioso y busca comprender su origen y propósito. Ahora utiliza su fuerza descomunal para moldear su propio destino, lanzando pedazos de roca y aplastando a quienes se interpongan en su camino.
-    </p>
-    <ng-template pTemplate="footer">
-        <div class="flex gap-3 mt-1">
-            <p-button label="Cancel" severity="secondary" class="w-full" styleClass="w-full" />
-            <p-button label="Save" class="w-full" styleClass="w-full" />
-        </div>
-    </ng-template>
-</p-card>
-
-<div class="flex flex-wrap md:justify-content-between justify-content-center">
-    <div class="text-orange-500 hover:text-orange-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center">hover:text-orange-700</div>
-</div>
-
-<p-card header="Queen of Pain" subheader="" [style]="{ width: '360px' }">
-    <ng-template pTemplate="header">
-        <img alt="Card" src="https://cdn.akamai.steamstatic.com/apps/dota2/images/qoparcana/wallpaper1_large.png" />
-    </ng-template>
-    <p>
-        Historia de Queen of Pain
-
-        La Reina del Dolor, conocida como Akasha, fue una princesa mortal que, buscando poder, hizo un pacto con fuerzas oscuras. Transformada en una demoníaca entidad de sufrimiento eterno, su cuerpo ahora está envuelto en sombras y tormentos. Alimentada por el dolor y la desesperación, Akasha viaja por el mundo sembrando el sufrimiento, disfrutando de las emociones de aquellos que sufren. Con su poder, es capaz de desatar ondas de energía destructiva y causar dolor físico y psicológico a sus enemigos.
-    </p>
-    <ng-template pTemplate="footer">
-        <div class="flex gap-3 mt-1">
-            <p-button label="Cancel" severity="secondary" class="w-full" styleClass="w-full" />
-            <p-button label="Save" class="w-full" styleClass="w-full" />
-        </div>
-    </ng-template>
-</p-card>
-
-<div class="flex flex-wrap md:justify-content-between justify-content-center">
-    <div class="text-orange-500 hover:text-orange-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center">hover:text-orange-700</div>
-</div>
-
-<p-card header="Lina" subheader="" [style]="{ width: '360px' }">
-    <ng-template pTemplate="header">
-        <img alt="Card" src="https://cdn.sanity.io/images/6znhzi10/production/112ccc734eb9b4a80ee0a7f5e2b5845768124278-2560x1440.jpg?w=736&auto=format" />
-    </ng-template>
-    <p>
-        Historia de Lina
-
-Lina, conocida como la Dama de Fuego, es una joven hechicera nacida con un poder ígneo inmenso. Desde pequeña, mostró una conexión única con las llamas, y su habilidad para controlar el fuego la llevó a convertirse en una de las hechiceras más poderosas de su tiempo. A pesar de su talento, Lina siempre luchó por el reconocimiento, buscando destacarse en un mundo donde las mujeres poderosas eran raras. Ahora, como la Dama de Fuego, usa su control sobre el fuego para luchar contra aquellos que amenazan la paz, dejando un rastro de destrucción a su paso.
-    </p>
-    <ng-template pTemplate="footer">
-        <div class="flex gap-3 mt-1">
-            <p-button label="Cancel" severity="secondary" class="w-full" styleClass="w-full" />
-            <p-button label="Save" class="w-full" styleClass="w-full" />
-        </div>
-    </ng-template>
-</p-card>
-
-<div class="flex flex-wrap md:justify-content-between justify-content-center">
-    <div class="text-orange-500 hover:text-orange-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center">hover:text-orange-700</div>
-</div>
-
-<p-card header="Crystal Maiden" subheader="" [style]="{ width: '360px' }">
-    <ng-template pTemplate="header">
-        <img alt="Card" src="https://images.alphacoders.com/101/1019591.jpg" />
-    </ng-template>
-    <p>
-        Historia de Crystal Maiden
-
-Rikiya, conocida como Crystal Maiden, es una hechicera del hielo proveniente de las tierras gélidas de los reinos del norte. Desde su juventud, estuvo marcada por una extraña conexión con el hielo, desarrollando poderes mágicos que le permiten manipular el frío y la nieve. Después de que su aldea fuera destruida por fuerzas oscuras, se unió a la lucha para proteger a los inocentes. Ahora, como Crystal Maiden, utiliza su magia para congelar a sus enemigos y ayudar a sus compañeros, siempre guiada por el deseo de venganza y justicia.
-    </p>
-    <ng-template pTemplate="footer">
-        <div class="flex gap-3 mt-1">
-            <p-button label="Cancel" severity="secondary" class="w-full" styleClass="w-full" />
-            <p-button label="Save" class="w-full" styleClass="w-full" />
-        </div>
-    </ng-template>
-</p-card>
-
-<div class="flex flex-wrap md:justify-content-between justify-content-center">
-    <div class="text-orange-500 hover:text-orange-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center">hover:text-orange-700</div>
-</div>
-
-<p-card header="Juggernaut" subheader="" [style]="{ width: '360px' }">
-    <ng-template pTemplate="header">
-        <img alt="Card" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPWajHCpKuYPlmVWbfhXFLlNmm_bzvc22BQg&s" />
-    </ng-template>
-    <p>
-        Historia de Juggernaut
-
-       Juggernaut, cuyo verdadero nombre es Yurnero, es un guerrero nativo de una remota isla. Criado en un monasterio, fue entrenado en las artes del combate y la disciplina. Su destino lo marcó una máscara mágica, que le otorgó habilidades sobrehumanas y lo convirtió en el héroe de la espada inmortal. Aunque su vida está dedicada a la lucha, Yurnero sigue buscando un propósito más grande, guiado por la creencia de que la verdadera sabiduría reside en la perfección del combate. Como Juggernaut, lucha incansablemente para proteger y servir, confiando en su espada y su disciplina.
-    </p>
-    <ng-template pTemplate="footer">
-        <div class="flex gap-3 mt-1">
-            <p-button label="Cancel" severity="secondary" class="w-full" styleClass="w-full" />
-            <p-button label="Save" class="w-full" styleClass="w-full" />
-        </div>
-    </ng-template>
-</p-card>
-
-<div class="flex flex-wrap md:justify-content-between justify-content-center">
-    <div class="text-orange-500 hover:text-orange-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center">hover:text-orange-700</div>
-</div>
-
-<p-card header="Marci" subheader="" [style]="{ width: '360px' }">
-    <ng-template pTemplate="header">
-        <img alt="Card" src="https://www.vpesports.com/wp-content/uploads/2023/12/Dota-2-found-a-critical-bug-with-Marci-she-does-a-ton-of-damage-and-is-almost-invulnerable.jpeg" />
-    </ng-template>
-    <p>
-        Historia de Marci
-
-        Marci, una guerrera de corazón firme, proviene de las tierras de Kros. Criada en un pueblo dedicado a la protección de su gente, Marci fue entrenada en combate cuerpo a cuerpo desde temprana edad. Siempre leal a su señora, la princesa, luchó valientemente en las batallas, demostrando su excepcional destreza. Tras una tragedia que separó a su gente, Marci juró proteger a aquellos que lo necesitan, utilizando su fuerza y agilidad para ayudar a sus compañeros y derrotar a los enemigos en el campo de batalla.
-    </p>
-    <ng-template pTemplate="footer">
-        <div class="flex gap-3 mt-1">
-            <p-button label="Cancel" severity="secondary" class="w-full" styleClass="w-full" />
-            <p-button label="Save" class="w-full" styleClass="w-full" />
-        </div>
-    </ng-template>
-</p-card>
